@@ -35,6 +35,12 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Neutraface Display";
+  src: url(/assets/fonts/Neutraface_Display_Titling.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -42,6 +48,7 @@
           box-sizing: border-box;
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 html,
@@ -61,11 +68,13 @@ input, button, textarea {
   border: none;
   outline: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 a:focus,
@@ -97,17 +106,213 @@ h6 {
   font-size: 18px;
 }
 
-.header-wrapper {
+.header__container {
+  max-width: 1600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+header {
+  background: url(/assets/images/banner.png) top left no-repeat, url(/assets/images/header__background.png) top left no-repeat;
+  height: 1042px;
+  padding-top: 44px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__contact {
+  max-width: 265px;
   width: 100%;
+  color: #EEF1F6;
+  font-weight: 600;
+  border-radius: 90px;
+  background-color: #1FAB8A;
+  text-wrap: nowrap;
+  padding: 20.5px 62px;
+}
+.header__contact:hover {
+  outline: 4px solid #6195CF;
+}
+
+.search__container {
+  position: relative;
+  max-width: 491px;
+  width: 100%;
+}
+
+.search-bar {
+  color: #8E8E8E;
+  font-weight: 500;
+  padding: 21.5px 28px 21.5px 69px;
+  border-radius: 90px;
+  border: 4px solid #272525;
+  width: 100%;
+  height: 60px;
+}
+
+.search__icon {
+  position: absolute;
+  top: 20px;
+  left: 33px;
+}
+
+.header__lang-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 39px;
+}
+
+.header__lang--active {
+  color: #272525;
+  font-weight: 600;
+}
+
+.header__lang {
+  color: #8E8E8E;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 149px;
+  left: 0;
+  right: 0;
+  background: url(/assets/images/pack.png) no-repeat right, rgba(250, 251, 253, 0.44);
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+}
+.nav__menu li {
+  display: inline-block;
+  text-align: center;
+  text-wrap: nowrap;
+  padding: 41px 44px;
+  font-weight: 600;
+  color: #272525;
+}
+.nav__menu li:hover {
+  background-color: #272525;
+  border-radius: 6px;
+  color: rgb(250, 251, 253);
+  font-weight: 800;
+  position: relative;
+}
+.nav__menu li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  height: 8px;
+  background-color: inherit;
+  display: block;
+  border-radius: 6px;
+}
+
+.discount-banner {
+  margin-left: 116px;
+  font-family: "Neutraface Display";
+  font-weight: 900;
+}
+
+.nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top: 324px;
+}
+
+.preferences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.preferences li {
+  text-align: center;
+  display: inline-block;
+  width: 229px;
+}
 
-header {
-  max-width: 1600px;
-  margin: 0 auto;
+.hero__title {
+  font-family: "Gilroy";
+  text-transform: uppercase;
+  color: #272525;
+  margin-bottom: 8px;
+}
+
+.hero__text {
+  color: #272525;
+  font-weight: 400;
+  margin-bottom: 58px;
+  padding-right: 150px;
+}
+
+.advantages-text {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.advantages-text__highlight {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.popular {
+  position: absolute;
+  top: 841px;
+  width: 100%;
+  height: 888px;
+  background: url("/assets/images/Rectangle.png") no-repeat left;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+.items-grid li {
+  display: inline;
+}
+.wrapper {
+  margin: 0 160px;
 }/*# sourceMappingURL=index.css.map */

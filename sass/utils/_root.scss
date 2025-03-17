@@ -1,8 +1,11 @@
 $small-border-radius: 6px;
 $big-border-radius: 15px;
+$button-border-radius: 90px;
+$button-border-color: #6195CF;
 $black: #000;
 $night: #272525;
-$milk: #FAFBFD;
+$milk-opacity: rgba(250, 251, 253, 0.44);
+$milk: rgb(250, 251, 253);
 $snow: #FAFAFA;
 $white: #EEF1F6;
 $dark-purple: #3C336C;
@@ -10,3 +13,4 @@ $aqua-green: #1FAB8A;
 $smoke: #8E8E8E;
 $dark-smoke: #454747;
 $main-linear-gradient: linear-gradient(35deg, rgba(151,150,240,1) 0%, rgba(255,224,232,1) 100%);
+$secondary-linear-gradient: linear-gradient(270deg, rgba(51,100,227,1) 0%, rgba(51,100,227,0) 100%);

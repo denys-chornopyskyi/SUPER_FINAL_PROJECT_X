@@ -8,20 +8,107 @@
   </head>
   <body>
     <header>
-      <div class="header-wrapper">
-        <div class="logo">
-          <img src="./assets/images/svg/logo.svg" alt="Gifts & Merch" />
-        </div>
-        <input type="search" name="search" class="search-bar" />
-        <button class="contact">
-          <a href="tel:+380630130103">+380 630 130 103</a>
-        </button>
-        <div class="lan-changing">
-          <img src="./assets/icons/icon-user.svg" alt="User icon" />
-          <span class="active-lan">Ru</span>
-          <span class="inactive-lan">/Eng</span>
+      <div class="wrapper">
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="./assets/images/svg/logo.svg" alt="Gifts & Merch" />
+          </div>
+          <div class="search__container">
+            <span
+              ><img
+                src="/assets/images/svg/search.svg"
+                alt="search"
+                class="search__icon"
+            /></span>
+            <input
+              type="search"
+              name="search"
+              class="search-bar"
+              placeholder="Поиск"
+            />
+          </div>
+
+          <a href="tel:+380630130103" class="header__contact"
+            >+380 630 130 103</a
+          >
+
+          <div class="header__lang-container">
+            <img src="./assets/icons/icon-user.svg" alt="User icon" />
+            <div class="button__container">
+              <button class="header__lang--active">RU</button>
+              <button class="header__lang">/ENG</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <nav>
+      <div class="wrapper">
+        <div class="nav__wrapper">
+          <ul class="nav__menu">
+            <li>Наборы</li>
+            <li>Все товары</li>
+            <li>Пошив</li>
+            <li>Производство</li>
+            <li>Информация</li>
+          </ul>
+          <h3 class="discount-banner">Шопперы со скидкой - 25%</h3>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="wrapper">
+        <div class="hero">
+          <h2 class="hero__title">Свежее дыхание в корпоративной жизни</h2>
+          <p class="hero__text">
+            Ми вдосконалили процес замовлення продукції для того, щоб Ви i Ваша
+            компанія сконцентрувались на основних задачах i досягали поставлених
+            цілей.
+          </p>
+          <ul class="preferences">
+            <li>
+              <img src="/assets/images/svg/circle.svg" alt="circle" />
+              <p class="advantages-text">
+                Высокое качество
+                <span class="advantages-text__highlight">ONLY</span>
+              </p>
+            </li>
+            <li>
+              <img src="/assets/images/svg/circle.svg" alt="circle" />
+              <p class="advantages-text">
+                Поддержка менеджера
+                <span class="advantages-text__highlight">24/7</span>
+              </p>
+            </li>
+            <li>
+              <img src="/assets/images/svg/circle.svg" alt="circle" />
+              <p class="advantages-text">
+                Выполнение заказа в
+                <span class="advantages-text__highlight">TURBO-режиме</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section>
+        <div class="popular">
+          <div class="wrapper">
+            <h2 class="popular__title">Самое популярное</h2>
+            <p class="popular__text">
+              Товары, которые наиболее часто заказывают наши клиенты
+            </p>
+            <ul class="items-grid">
+              <li><img src="/assets/images/card_1.png" /></li>
+              <li><img src="/assets/images/card_2.png" /></li>
+              <li><img src="/assets/images/card_3.png" /></li>
+              <li><img src="/assets/images/card_4.png" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

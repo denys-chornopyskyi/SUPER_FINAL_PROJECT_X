@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
+  font-size: 18px;
   }
 
 html,
@@ -23,11 +24,13 @@ input, button, textarea {
   border: none;
   outline: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 a:focus,
 a:active {
