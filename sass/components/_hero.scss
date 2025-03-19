@@ -45,23 +45,3 @@
 
 
 
-
-.popular {
-  position: absolute;
-  top: 841px;
-  width: 100%;
-  height: 888px;
-  background: url("/assets/images/Rectangle.png") no-repeat left;
-}
-
-.items-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  li {
-    display: inline;
-    &:first-child {
-      
-    }
-  }
-}

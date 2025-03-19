@@ -1,0 +1,15 @@
+footer {
+  background: url(/assets/images/footer-bg.png) no-repeat left top;
+  margin-top: 100px;
+  padding-top: 128px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-item-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
+}
