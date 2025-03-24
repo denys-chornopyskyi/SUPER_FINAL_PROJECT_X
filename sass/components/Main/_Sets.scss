@@ -1,0 +1,79 @@
+$color-red: #C62E2A;
+$color-blue-light: #64A7DE;
+$color-blue-dark: #333B8B;
+$color-purple: #5A308C;
+$color-black: #272425;
+$color-red-dark: #CB2229;
+$color-yellow: #FFF12D;
+$color-green: #309F85;
+
+
+
+.sets {
+  height: 672px;
+  padding-top: 100px;
+  background: 
+  url(/assets/images/decorating/rotated-photo.png) no-repeat 55vw 40px, 
+  url(/assets/images/backgrounds/sets-bg.png) no-repeat center;
+  
+  .set__suptitle {
+    font-family: "Pangolin";
+    font-weight: 400;
+    font-size: 69px;
+    &-wrapper {
+      transform: rotate(-2.35deg);
+      padding: 77px 0 20px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+    &--color-yellow {
+      color: $color-yellow;
+    }
+    &--color-green { 
+      color: $color-green;
+    }
+    &--color-red {
+      color: $color-red;
+    }
+    &--color-blue-light {
+      color: $color-blue-light;
+    }
+    &--color-blue-dark {
+      color: $color-blue-dark;
+    }
+    &--color-purple {
+      color: $color-purple;
+    }
+    &--color-black {
+      color: $color-black;
+    }
+    &--color-red-dark {
+      color: $color-red-dark;
+    }
+    
+  }
+  
+}
+  
+  .products-button {
+    padding: 19px 56.5px;
+    max-width: 280px;
+  background-color: #272525;
+  color: #FAFAFA;
+  border-radius: 90px;
+}
+
+.create-button {
+  padding: 19px 84px;
+  background-color: #EEF1F6;
+  color: #272525;
+  border-radius: 90px;
+}
+
+
+.button-group {
+  display: flex;
+  margin-top: 60px;
+  gap: 29px;
+}

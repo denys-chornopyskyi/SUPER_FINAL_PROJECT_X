@@ -1,0 +1,26 @@
+.partners {
+  position: relative;
+  button {
+    background-color: #ECE7F0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.partners__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  margin-top: 70px;
+}

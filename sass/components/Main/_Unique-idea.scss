@@ -1,0 +1,47 @@
+.unique-idea {
+  background: url(/assets/images/backgrounds/unique-bg.png) no-repeat center;
+  height: 740px;
+  margin-top: 75px;
+
+}
+
+.unique-idea__content {
+  padding-top: 155px;
+  background: url(/assets/images/decorating/lamp.png) no-repeat 918px 50px,
+  url(/assets/images/decorating/rocket1.png) no-repeat 709px 232px,
+  url(/assets/svg/curve.svg) no-repeat 745px 395px,
+  url(/assets/images/decorating/rocket2.png) no-repeat 1443px 33px;
+}
+
+.unique-idea__title {
+   max-width: 556px;
+  width: 100%;
+}
+.unique-idea__description {
+  max-width: 556px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.unique-idea__subtitle {
+  max-width: 556px;
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.unique-idea__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.unique-idea__form-input {
+  border-bottom: 1px solid $night;
+  width: 100%;
+  max-width: 336px;
+}
+.unique-idea__form-button {
+  color: white;
+  background-color: $aqua-green;
+  padding: 19px 103px;
+  border-radius: 60px;
+}

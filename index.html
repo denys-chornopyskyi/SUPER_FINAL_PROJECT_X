@@ -7,314 +7,324 @@
     <title>Final Project</title>
   </head>
   <body>
-    <header>
-      <div class="wrapper">
-        <div class="header__container">
-          <div class="header__logo">
-            <img src="./assets/images/svg/logo.svg" alt="Gifts & Merch" />
+    <header class="header header--main">
+      <div class="container">
+        <div class="top-bar">
+          <div class="top-bar__logo-wrapper">
+            <img src="./assets/svg/logo.svg" alt="Gifts & Merch" />
           </div>
-          <div class="search__container">
-            <span
-              ><img
-                src="/assets/images/svg/search.svg"
-                alt="search"
-                class="search__icon"
-            /></span>
+          <div class="top-bar__search-wrapper">
+            <img
+              src="/assets/icons/search.svg"
+              alt="search"
+              class="top-bar__search-icon"
+            />
             <input
               type="search"
               name="search"
-              class="search-bar"
+              class="top-bar__search"
               placeholder="Поиск"
             />
           </div>
-
-          <a href="tel:+380630130103" class="header__contact"
+          <a href="tel:+380630130103" class="top-bar__contact"
             >+380 630 130 103</a
           >
-
-          <div class="header__lang-container">
-            <img src="./assets/icons/icon-user.svg" alt="User icon" />
-            <div class="button__container">
-              <button class="header__lang--active">RU</button>
-              <button class="header__lang">/ENG</button>
+          <div class="top-bar__user">
+            <img src="./assets/icons/user.svg" alt="User icon" />
+            <div class="top-bar__lang">
+              <button class="top-bar-__lang-btn--active">RU</button>
+              <button class="top-bar__lang-btn">/ENG</button>
             </div>
           </div>
         </div>
       </div>
-    </header>
 
-    <nav>
-      <div class="wrapper">
-        <div class="nav__wrapper">
-          <ul class="nav__menu">
-            <li>Наборы</li>
-            <li>Все товары</li>
-            <li>Пошив</li>
-            <li>Производство</li>
-            <li>Информация</li>
-          </ul>
-          <h3 class="discount-banner">Шопперы со скидкой - 25%</h3>
+      <nav>
+        <div class="container">
+          <div class="nav__wrapper">
+            <ul class="nav__menu">
+              <li class="nav__menu-item">Наборы</li>
+              <li class="nav__menu-item">Все товары</li>
+              <li class="nav__menu-item">Пошив</li>
+              <li class="nav__menu-item">Производство</li>
+              <li class="nav__menu-item">Информация</li>
+            </ul>
+            <p class="nav__discount-banner">Шопперы со скидкой - 25%</p>
+          </div>
         </div>
-      </div>
-    </nav>
-    <section>
-      <div class="wrapper">
+      </nav>
+      <div class="container">
         <div class="hero">
           <h2 class="hero__title">Свежее дыхание в корпоративной жизни</h2>
-          <p class="hero__text">
+          <p class="hero__description">
             Ми вдосконалили процес замовлення продукції для того, щоб Ви i Ваша
             компанія сконцентрувались на основних задачах i досягали поставлених
             цілей.
           </p>
-          <ul class="preferences">
+          <ul class="hero__advantages">
             <li>
-              <img src="/assets/images/svg/circle.svg" alt="circle" />
-              <p class="advantages-text">
+              <img src="/assets/svg/circle-decorated.svg" alt="circle" />
+              <p class="hero__advantages-text">
                 Высокое качество
-                <span class="advantages-text__highlight">ONLY</span>
+                <span class="hero__advantages-text--bold">ONLY</span>
               </p>
             </li>
             <li>
-              <img src="/assets/images/svg/circle.svg" alt="circle" />
-              <p class="advantages-text">
+              <img src="/assets/svg/circle-decorated.svg" alt="circle" />
+              <p class="hero__advantages-text">
                 Поддержка менеджера
-                <span class="advantages-text__highlight">24/7</span>
+                <span class="hero__advantages-text--bold">24/7</span>
               </p>
             </li>
             <li>
-              <img src="/assets/images/svg/circle.svg" alt="circle" />
-              <p class="advantages-text">
+              <img src="/assets/svg/circle-decorated.svg" alt="circle" />
+              <p class="hero__advantages-text">
                 Выполнение заказа в
-                <span class="advantages-text__highlight">TURBO-режиме</span>
+                <span class="hero__advantages-text--bold">TURBO-режиме</span>
               </p>
             </li>
           </ul>
         </div>
       </div>
-    </section>
-    <main>
-      <section>
-        <div class="popular">
-          <div class="wrapper">
-            <ul class="popular__list">
-              <li class="popular__list-item">
-                <h2 class="popular__title">Самое популярное</h2>
-                <p class="section-description">
-                  Товары, которые наиболее часто заказывают наши клиенты
-                </p>
-              </li>
-              <li class="popular__list-item">
-                <a href="#" class="products-link">Все товары</a>
-              </li>
-            </ul>
+    </header>
 
-            <ul class="items-grid">
-              <li><img src="/assets/images/card1.png" /></li>
-              <li><img src="/assets/images/card2.png" /></li>
-              <li><img src="/assets/images/card3.png" /></li>
-              <li><img src="/assets/images/card4.png" /></li>
-              <li><span>Шопперы</span></li>
-            </ul>
-          </div>
+    <main>
+      <section class="popular">
+        <div class="container">
+          <ul class="popular__header">
+            <li>
+              <h2 class="popular__title">Самое популярное</h2>
+              <p class="section-description">
+                Товары, которые наиболее часто заказывают наши клиенты
+              </p>
+            </li>
+            <li>
+              <a href="#" class="popular__products-link">Все товары</a>
+            </li>
+          </ul>
+
+          <ul class="popular__grid">
+            <li class="popular__grid-item">
+              <img src="/assets/images/products/tote-bag.png" />
+            </li>
+            <li class="popular__grid-item">
+              <img src="/assets/images/products/mug.png" />
+            </li>
+            <li class="popular__grid-item">
+              <img src="/assets/images/products/thermos.png" />
+            </li>
+            <li class="popular__grid-item">
+              <img src="/assets/images/products/t-shirt.png" />
+            </li>
+            <li class="popular__grid-item"><span>Шопперы</span></li>
+          </ul>
         </div>
       </section>
-      <section>
-        <div class="sets">
-          <div class="wrapper">
-            <div class="set__suptitle">
-              <span class="text color-text1">c</span>
-              <span class="text color-text2">r</span>
-              <span class="text color-text3">e</span>
-              <span class="text color-text4">a</span>
-              <span class="text color-text5">t</span>
-              <span class="text color-text6">i</span>
-              <span class="text color-text7">v</span>
-              <span class="text color-text8">e</span>
+      <section class="sets">
+        <div class="container">
+          <div class="set__suptitle-wrapper">
+            <span class="set__suptitle set__suptitle--color-red">c</span>
+            <span class="set__suptitle set__suptitle--color-blue-light">r</span>
+            <span class="set__suptitle set__suptitle--color-blue-dark">e</span>
+            <span class="set__suptitle set__suptitle--color-purple">a</span>
+            <span class="set__suptitle set__suptitle--color-black">t</span>
+            <span class="set__suptitle set__suptitle--color-red-dark">i</span>
+            <span class="set__suptitle set__suptitle--color-yellow">v</span>
+            <span class="set__suptitle set__suptitle--color-green">e</span>
+          </div>
+          <h2>
+            Хотите удивить ваших коллег/партнеров <br />
+            необычными подарками?
+          </h2>
+          <p class="section-description">
+            Выбирайте готовые подарочные наборы или укажите <br />
+            критерии по которым мы соберем для Вас уникальный бокс.
+          </p>
+          <ul class="button-group">
+            <li>
+              <a href="#" class="products-button">Перейти к наборам</a>
+            </li>
+            <li>
+              <a href="#" class="create-button">Создать свой</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="custom-products">
+        <div class="container">
+          <div class="custom-products__wrapper">
+            <div class="custom-products__image-wrapper">
+              <img
+                src="/assets/images/products/Sweater_Mockup.png"
+                class="custom-products__image"
+              />
             </div>
-            <h2>
-              Хотите удивить ваших коллег/партнеров <br />
-              необычными подарками?
-            </h2>
-            <p class="section-description">
-              Выбирайте готовые подарочные наборы или укажите <br />
-              критерии по которым мы соберем для Вас уникальный бокс.
-            </p>
-            <ul class="button-group">
-              <li>
-                <a href="#" class="products-button">Перейти к наборам</a>
-              </li>
-              <li>
-                <a href="#" class="create-button">Создать свой</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="custom-products">
-          <div class="wrapper">
-            <div class="custom-products__container">
-              <div class="img-wrapper">
-                <img
-                  src="/assets/images/Sweater_Mockup_Front_and_Back 1 (1).png"
-                />
-              </div>
-              <div class="custom-products__content">
-                <h3>
-                  Помимо готовой продукции высокого качeства, мы можем для Вас
-                  произвести одежду, аксессуры, вкусности и другое под заказ.
-                </h3>
-                <p class="section-description">
-                  Благодаря личному производству мы изготавливаем <br />
-                  большие партии в короткие сроки, а так же у Вас всегда <br />
-                  есть возможность кастомизировать изделия.
-                </p>
-                <div class="products-container">
-                  <ul class="products-list">
-                    <li>
-                      <img
-                        src="/assets/images/photo_2021-09-29_17-07-49-removebg-preview 1.png"
-                      />
-                    </li>
-                    <li>
-                      <img src="/assets/images/2020-11-24_22.50 1.png" />
-                    </li>
-                    <li>
-                      <img
-                        src="/assets/images/IMG_FAF3FFEF2E07-10-removebg-preview 1.png"
-                      />
-                    </li>
-                    <li>
-                      <img src="/assets/images/klj 1.png" />
-                    </li>
-                  </ul>
-                  <div class="switch-element">
-                    <button>
-                      <img src="/assets/images/svg/Vector 4.svg" />
-                    </button>
-                    <span>1/7</span>
-                    <button>
-                      <img src="/assets/images/svg/Vector 3.svg" />
-                    </button>
-                  </div>
+            <div class="custom-products__contents">
+              <h3>
+                Помимо готовой продукции высокого качeства, мы можем для Вас
+                произвести одежду, аксессуры, вкусности и другое под заказ.
+              </h3>
+              <p class="section-description">
+                Благодаря личному производству мы изготавливаем <br />
+                большие партии в короткие сроки, а так же у Вас всегда <br />
+                есть возможность кастомизировать изделия.
+              </p>
+              <div class="custom-products__list-wrapper">
+                <ul class="custom-products__list">
+                  <li class="custom-products__list-item">
+                    <img src="/assets/images/products/product1.png" />
+                  </li>
+                  <li class="custom-products__list-item">
+                    <img src="/assets/images/products/product2.png" />
+                  </li>
+                  <li class="custom-products__list-item">
+                    <img src="/assets/images/products/product3.png" />
+                  </li>
+                  <li class="custom-products__list-item">
+                    <img src="/assets/images/products/product4.png" />
+                  </li>
+                </ul>
+                <div class="custom-products__pagination">
+                  <button>
+                    <img src="/assets/icons/arrow-left.svg" />
+                  </button>
+                  <span>1/7</span>
+                  <button>
+                    <img src="/assets/icons/arrow-right.svg" />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="unique-idea">
-          <div class="wrapper">
-            <div class="unique-idea__content">
-              <h3 class="unique-idea__title">
-                У вас своя УНИКАЛЬНАЯ идея по разработке мерча?
-              </h3>
-              <p class="section-description unique-idea__description">
-                Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим
-                с технологией производства, предоставим образцы матералов.
-              </p>
-              <h4 class="unique-idea__subtitle">
-                Введите свои контактные данные, и наш менеджер свяжется c Вами в
-                течении 15 минут
-              </h4>
+      <section class="unique-idea">
+        <div class="container">
+          <div class="unique-idea__content">
+            <h3 class="unique-idea__title">
+              У вас своя УНИКАЛЬНАЯ идея по разработке мерча?
+            </h3>
+            <p class="section-description unique-idea__description">
+              Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с
+              технологией производства, предоставим образцы матералов.
+            </p>
+            <h4 class="unique-idea__subtitle">
+              Введите свои контактные данные, и наш менеджер свяжется c Вами в
+              течении 15 минут
+            </h4>
 
-              <form class="unique-idea__form">
-                <input type="text" placeholder="Ваше Имя" />
-                <input type="email" placeholder="Ваша електронная почта" />
-                <input type="tel" placeholder="Ваш номер телефона" />
-                <button type="submit">Заказать</button>
-              </form>
-            </div>
+            <form class="unique-idea__form">
+              <input
+                class="unique-idea__form-input"
+                type="text"
+                placeholder="Ваше Имя"
+              />
+              <input
+                class="unique-idea__form-input"
+                type="email"
+                placeholder="Ваша електронная почта"
+              />
+              <input
+                class="unique-idea__form-input"
+                type="tel"
+                placeholder="Ваш номер телефона"
+              />
+              <button class="unique-idea__form-button" type="submit">
+                Заказать
+              </button>
+            </form>
           </div>
         </div>
       </section>
-      <section>
-        <div class="partners">
-          <div class="wrapper">
+      <!-- <section class="partners">
+          <div class="container">
             <h2>С нами соотрудничают</h2>
-            <div class="partners-container">
-              <button class="partners-prev">
-                  <img src="/assets/images/svg/Vector 4.svg" />
+            <div class="partners__wrapper">
+              <button class="partners__prev-button">
+                  <img src="/assets/icons/arrow-left.svg" />
                 </button>
-              <ul class="partners-list">
-                <li><img src="/assets/images/Logo_NIKE 1.png" /></li>
-                <li><img src="/assets/images/Coca-Cola_logo 1.png" /></li>
-                <li><img src="/assets/images/Group 6.png" /></li>
-                <li><img src="/assets/images/logo-full-01-1 1.png" /></li>
-                <li><img src="/assets/images/logo-white 1.png" /></li>
+              <ul class="partners__list">
+                <li><img src="/assets/images/logo/nike.png" /></li>
+                <li><img src="/assets/images/logo/coca-cola.png" /></li>
+                <li><img src="/assets/images/logo/atlas-weekend.png" /></li>
+                <li><img src="/assets/images/logo/megogo.png" /></li>
+                <li><img src="/assets/images/logo/crazybox.png" /></li>
               </ul>
-              <button class="partners-next">
-                <img src="/assets/images/svg/Vector 3.svg" />
+              <button class="partners-next-button">
+                <img src="/assets/icons/arrow-right.svg" />
             </div>
-            
-         
           </div>
-        </div>
-      </section>
+      </section> -->
     </main>
+
     <footer>
-        <div class="wrapper">
-          <ul class="footer-list">
-            <li class="footer-item-contacts">
-              <img src="/assets/images/svg/logo.svg" alt="Gifts & Merch" />
-              <h6>Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание свежее</h6>
-              <div class="footer-contacts">
-                <a href="tel:+380630130103">+380 630 130 103</a>
-                <a href="mailto:example@gmail.com">example@gmail.com</a>
-              </div>
-              <div class="social-media">
-                <a href="#"><img src="/assets/images/svg/Facebook - Original.svg" alt=""></a>
-                <a href="#"><img src="/assets/images/svg/Group.svg" alt=""></a>
-                <a href="#"><img src="/assets/images/svg/LinkedIn - Original.svg" alt=""></a>
-              </div>
-            </li>
-            <li>
-              <ul class="footer-links">
-                <li><h5>Категории</h5> </li>
-                <li><h6>Пошив</h6></li>
-                <li><h6>Все товары</h6></li>
-                <li><h6>Наборы</h6></li>
-                <li><h6>Производство</h6></li>
-              </ul>
-            </li>
-            <li>
-              <ul class="footer-links">
-                <li>
-                  <h5>Информация</h5>
-                </li>
-                <li>
-                  <h6>O нас</h6>
-                </li>
-                <li>
-                  <h6>Доставка</h6>
-                </li>
-                <li>
-                  <h6>Оплата</h6>
-                </li>
-                <li>
-                  <h6>Контакты</h6>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="footer-links">
-                <li><h5>Связаться с менеджером</h5></li>
-                <li><span class="footer-text">Есть вопрос на который не нашли ответ? Оставьте контакт и наш менеджер свяжеться с вами</span>
-                </li>
-                <li>
-                  <form class="footer-form">
-                    <input type="tel" name="phone" placeholder="Номер телефона" />
-                    <button type="submit"><img src="/assets/images/svg/Group 6.svg"></button>
-                  </form>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright">
-          <p>© 2023 Все права защищены <a href="#">Политика конфиденциальности</a></p>
-        </div>
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item-contacts">
+            <img src="/assets/svg/logo.svg" alt="Gifts & Merch" />
+            <h6 class="footer__description">
+              Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание
+              свежее
+            </h6>
+            <div class="footer__contacts">
+              <a href="tel:+380630130103">+380 630 130 103</a>
+              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+            <div class="footer__social-media">
+              <a href="#"><img src="/assets/icons/facebook.svg" alt="" /></a>
+              <a href="#"><img src="/assets/icons/instagram.svg" alt="" /></a>
+              <a href="#"><img src="/assets/icons/linkedin.svg" alt="" /></a>
+            </div>
+          </li>
+          <li>
+            <ul class="footer__links">
+              <li><h5>Категории</h5></li>
+              <li><h6>Пошив</h6></li>
+              <li><h6>Все товары</h6></li>
+              <li><h6>Наборы</h6></li>
+              <li><h6>Производство</h6></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer__links">
+              <li>
+                <h5>Информация</h5>
+              </li>
+              <li>
+                <h6>O нас</h6>
+              </li>
+              <li>
+                <h6>Доставка</h6>
+              </li>
+              <li>
+                <h6>Оплата</h6>
+              </li>
+              <li>
+                <h6>Контакты</h6>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-form">
+            <h5>Связаться с менеджером</h5>
+            <p class="footer__form-text">
+              Есть вопрос на который не нашли ответ? Оставьте контакт и наш
+              менеджер свяжеться с вами
+            </p>
+
+            <form class="footer__form">
+              <input type="tel" name="phone" placeholder="Номер телефона" />
+              <button type="submit">
+                <img src="/assets/icons/form-arrow-right.svg" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          © 2023 Все права защищены <a href="#">Политика конфиденциальности</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
