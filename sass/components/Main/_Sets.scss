@@ -16,7 +16,7 @@ $color-green: #309F85;
   url(/assets/images/decorating/rotated-photo.png) no-repeat 55vw 40px, 
   url(/assets/images/backgrounds/sets-bg.png) no-repeat center;
   
-  .set__suptitle {
+  .set__subtitle {
     font-family: "Pangolin";
     font-weight: 400;
     font-size: 69px;
@@ -53,12 +53,16 @@ $color-green: #309F85;
     }
     
   }
+  &__title {
+    max-width: 958px;
+    margin-bottom: 30px;
+  }
   
 }
-  
-  .products-button {
-    padding: 19px 56.5px;
-    max-width: 280px;
+
+.products-button {
+  padding: 19px 56.5px;
+  max-width: 280px;
   background-color: #272525;
   color: #FAFAFA;
   border-radius: 90px;
@@ -76,4 +80,37 @@ $color-green: #309F85;
   display: flex;
   margin-top: 60px;
   gap: 29px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .sets__title {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sets {
+    text-align: center;
+  }
+  .sets__title {
+    font-size: 24px;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .products-button {
+   padding: 19px 40px;
+  }
+  .create-button {
+   padding: 19px 66px;
+  
+  }
+
+  
+}
+
+@media (max-width: 320px) {
 }

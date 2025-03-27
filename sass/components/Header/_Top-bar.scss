@@ -8,7 +8,6 @@
 
 .top-bar__contact {
   max-width: 265px;
-  width: 100%;
   color: $white;
   font-weight: 600;
   border-radius: $button-border-radius;
@@ -16,7 +15,8 @@
   text-wrap: nowrap;
   padding: 0px 62px;
   height: 60px;
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
   &:hover {
     outline: 4px solid $button-border-color ;
@@ -46,6 +46,8 @@
 
 .top-bar__logo-wrapper {
   max-width: max-content;
+  display: flex;
+  align-items: center;
   width: 100%;
   img {
     width: 100%;
@@ -76,19 +78,70 @@
   color: $smoke;
 }
 
+.burger {
+  display: none;
+  align-items: center;
+}
+
+.top-bar__search-icon-m {
+  display: none;
+}
+
+
 
 @media (max-width: 1024px) {
-.top-bar__contact {
-  height: 40px;
-  padding: 0px 31px;
-  flex: 1;
-}
+  .top-bar__contact {
+    height: 40px;
+    padding: 0px 31px;
+  }
   .top-bar__search-wrapper {
-  height: 40px;
-}
-.top-bar__user img {
-  width: 28px;
+    height: 40px;
+  }
+  .top-bar__user img {
+    width: 28px;
+  }
 }
 
+@media (max-width: 768px) {
 
+  .burger {
+    display: flex;
+  }
+  .top-bar {
+    z-index: 10;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #f0e2f2 ;
+    &__search-wrapper {
+      display: none;
+    }
+    &__search-icon-m {
+      display: flex;
+    }
+    &__user {
+      display: none;
+    }
+    &__logo-wrapper {
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar__contact {
+    display: none;
+  }
+  .top-bar__logo-wrapper {
+    max-width: 280px;
+  }
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    gap: 31px;
+  }
 }

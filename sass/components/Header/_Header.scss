@@ -1,5 +1,5 @@
 header {
-
+  z-index: 10;
   height: 1042px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -16,6 +16,21 @@ header {
     background-position: 350px 180px, 0px 0px; 
   }
 }
+
+@media (max-width: 768px) {
+  .header--main {
+    background-position: 60px 180px, 0px 0px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header--main {
+  background: url('/assets/images/backgrounds/header-bg480.png') no-repeat 40vw 320px,
+  url('/assets/images/backgrounds/header-bg.png');
+  }
+}
+
+
 
 
 @import './Top-bar';

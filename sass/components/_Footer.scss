@@ -57,10 +57,12 @@ footer {
     color: #8F90A6;
     line-height: 24px;
     margin-bottom: 22px;
+
   }
   &__form {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 280px;
     width: 100%;
     background-color: white;
@@ -68,6 +70,7 @@ footer {
     border-radius: 
     $big-border-radius;
     padding: 10px 12px;
+
     button {
       height: 34px;
       width: 34px;
@@ -85,12 +88,82 @@ footer {
   
   &__copyright {
     text-align: center;
-    padding: 40px 0;
+    padding: 40px ;
     color: #9FA3B2;
   }
 }
 
+@media (max-width: 1024px) {
+  footer {
+    background: url(/assets/images/backgrounds/footer-bg1024.png) no-repeat center top;
+  }
+  .footer__list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .footer__item-form {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer__form-text {
+    margin: 0;
+    max-width: 351px;
+  }
+}
 
+@media (max-width: 768px) {
+  .footer {
+    &__item-contacts {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    &__header-wrapper {
+      max-width: 500px;
+    }
+    &__item-form {
+      flex-direction: column;
+      max-width: max-content;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+     position: relative;
+    top: -250px;
+  }
+  .footer {
+    position: relative;
+    top: -200px;
+    &__list {
+      justify-content: center;
+      gap: 50px;
+    }
+    &__header-wrapper {
+        max-width: 460px;
+        img {
+          width: 100%;
+        }
+      }
+    &__description {
+      max-width: 100%;
+    }
+    &__item-contacts {
+      justify-content: center;
+    }
+    &__social-media {
+      justify-content: center;
+  }
+    &__item-form {
+      justify-content: center;
+      align-items: center;
+    }
+ }
+}
 
 
 

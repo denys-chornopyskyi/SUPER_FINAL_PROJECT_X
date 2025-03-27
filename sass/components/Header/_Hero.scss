@@ -59,6 +59,41 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    &__title {
+     padding-top: 20px;
+     font-size: 36px;
+
+    }
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .hero {
+    &__advantages-text {
+      display: none;
+    }
+    &__advantages {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+  .hero__description {
+    padding-right: 0;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+}
+
+
+
+
 
 
 

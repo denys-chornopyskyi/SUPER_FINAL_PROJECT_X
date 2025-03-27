@@ -15,7 +15,7 @@
           </div>
           <div class="top-bar__search-wrapper">
             <img
-              src="/assets/icons/search.svg"
+              src="/assets/icons/search-gray.svg"
               alt="search"
               class="top-bar__search-icon"
             />
@@ -26,6 +26,11 @@
               placeholder="Поиск"
             />
           </div>
+          <img
+            src="/assets/icons/search-default.svg"
+            alt="search"
+            class="top-bar__search-icon-m"
+          />
           <a href="tel:+380630130103" class="top-bar__contact"
             >+380 630 130 103</a
           >
@@ -35,6 +40,9 @@
               <button class="top-bar-__lang-btn--active">RU</button>
               <button class="top-bar__lang-btn">/ENG</button>
             </div>
+          </div>
+          <div class="burger">
+            <img src="/assets/svg/burger.svg">
           </div>
         </div>
       </div>
@@ -87,8 +95,15 @@
         </div>
       </div>
     </header>
+    
 
     <main>
+      
+
+
+
+
+
       <section class="popular">
         <div class="container">
           <ul class="popular__header">
@@ -100,9 +115,119 @@
             </li>
             <li>
               <a href="#" class="popular__products-link">Все товары</a>
+              <div class="cart-wrapper">
+          <button popovertarget="my-popover" popovertargetaction="shows" class="cart-button">
+          <img src="./assets/icons/🌈 COLOR (2).svg" alt="">
+          </button>
+          <div id="my-popover" class="popover" popover="manual">
+          <div class="popover__wrapper">
+            <div class="popover__left-side">
+    
+              <h4>Оформить заказ</h4>
+              <p class="popover__text">
+                Введите свои контактные данные, и наш менеджер свяжется с Вами в течении
+                1 часа
+              </p>
+              <form class="popover__form">
+                <input
+                  class="popover__form-input"
+                  type="text"
+                  placeholder="Ваше Имя"
+                />
+                <input
+                  class="popover__form-input"
+                  type="email"
+                  placeholder="Ваша електронная почта"
+                />
+                <input
+                  class="popover__form-input"
+                  type="tel"
+                  placeholder="Ваш номер телефона"
+                />
+                <button class="popover__form-button" type="submit">Заказать</button>
+              </form>
+              <p class="popover__bottom-text">
+                Натискаючи "Підтвердити замовлення", Ви даєте згоду на обробку Ваших
+                персональних даних
+              </p>
+            </div>
+            <div class="popover__right-side">
+              <h4>Корзина</h4>
+              <ul class="popover__item-list">
+                 <li class="popover__item">
+                  
+                      <img src="./assets/images/products/mikca.png">
+                      <p>EL003 Elleven Checkpoint- Friendly Compu-Backpack</p>
+                      <ul class="popover__list1">
+                        <li>Цвет <div></div></li>
+                        <li>Размер <span>XS</span></li>
+                      </ul>
+                      <ul class="popover__list2">
+                        <li>Кол-во</li>
+                        <li>
+                          <button><img src="./assets/icons/-.svg"></button>
+                          <span>5</span>
+                          <button><img src="./assets/icons/+.svg"></button>
+                        </li>
+                      </ul>
+                      <span style="font-weight: bold;">$76.43</span>
+                      <button class="popover__item-delete"><img src="./assets/icons/cross.svg"></button>
+                </li>
+                <li class="popover__item">
+                  
+                      <img src="./assets/images/products/mikca.png">
+                      <p>EL003 Elleven Checkpoint- Friendly Compu-Backpack</p>
+                      <ul class="popover__list1">
+                        <li>Цвет <div></div></li>
+                        <li>Размер <span>XS</span></li>
+                      </ul>
+                      <ul class="popover__list2">
+                        <li>Кол-во</li>
+                        <li>
+                          <button><img src="./assets/icons/-.svg"></button>
+                          <span>5</span>
+                          <button><img src="./assets/icons/+.svg"></button>
+                        </li>
+                      </ul>
+                      <span style="font-weight: bold;">$76.43</span>
+                      <button class="popover__item-delete"><img src="./assets/icons/cross.svg"></button>
+                </li>
+                <li class="popover__item">
+                  
+                      <img src="./assets/images/products/mikca.png">
+                      <p>EL003 Elleven Checkpoint- Friendly Compu-Backpack</p>
+                      <ul class="popover__list1">
+                        <li>Цвет <div></div></li>
+                        <li>Размер <span>XS</span></li>
+                      </ul>
+                      <ul class="popover__list2">
+                        <li>Кол-во</li>
+                        <li>
+                          <button><img src="./assets/icons/-.svg"></button>
+                          <span>5</span>
+                          <button><img src="./assets/icons/+.svg"></button>
+                        </li>
+                      </ul>
+                      <span style="font-weight: bold;">$76.43</span>
+                      <button class="popover__item-delete"><img src="./assets/icons/cross.svg"></button>
+                </li>
+               
+              </ul>
+              <div class="popover__flex">
+                <span>Заказ № 110293</span>
+                <span>Всего: $ 235.80</span>
+              </div>
+            </div>
+      
+            <button popovertargetaction="hide" popovertarget="my-popover" class="popover-close">
+              <img src="./assets/icons/cross.svg" />
+            </button>
+          </div>
+          </div>
+        </div>
             </li>
           </ul>
-
+          
           <ul class="popular__grid">
             <li class="popular__grid-item">
               <img src="/assets/images/products/tote-bag.png" />
@@ -118,23 +243,23 @@
             </li>
             <li class="popular__grid-item"><span>Шопперы</span></li>
           </ul>
+          <a href="#" class="popular__products-link-bottom">Все товары</a>
         </div>
       </section>
       <section class="sets">
         <div class="container">
-          <div class="set__suptitle-wrapper">
-            <span class="set__suptitle set__suptitle--color-red">c</span>
-            <span class="set__suptitle set__suptitle--color-blue-light">r</span>
-            <span class="set__suptitle set__suptitle--color-blue-dark">e</span>
-            <span class="set__suptitle set__suptitle--color-purple">a</span>
-            <span class="set__suptitle set__suptitle--color-black">t</span>
-            <span class="set__suptitle set__suptitle--color-red-dark">i</span>
-            <span class="set__suptitle set__suptitle--color-yellow">v</span>
-            <span class="set__suptitle set__suptitle--color-green">e</span>
+          <div class="set__subtitle-wrapper">
+            <span class="set__subtitle set__subtitle--color-red">c</span>
+            <span class="set__subtitle set__subtitle--color-blue-light">r</span>
+            <span class="set__subtitle set__subtitle--color-blue-dark">e</span>
+            <span class="set__subtitle set__subtitle--color-purple">a</span>
+            <span class="set__subtitle set__subtitle--color-black">t</span>
+            <span class="set__subtitle set__subtitle--color-red-dark">i</span>
+            <span class="set__subtitle set__subtitle--color-yellow">v</span>
+            <span class="set__subtitle set__subtitle--color-green">e</span>
           </div>
-          <h2>
-            Хотите удивить ваших коллег/партнеров <br />
-            необычными подарками?
+          <h2 class="sets__title">
+            Хотите удивить ваших коллег/партнеров необычными подарками?
           </h2>
           <p class="section-description">
             Выбирайте готовые подарочные наборы или укажите <br />
@@ -165,8 +290,8 @@
                 произвести одежду, аксессуры, вкусности и другое под заказ.
               </h3>
               <p class="section-description">
-                Благодаря личному производству мы изготавливаем <br />
-                большие партии в короткие сроки, а так же у Вас всегда <br />
+                Благодаря личному производству мы изготавливаем 
+                большие партии в короткие сроки, а так же у Вас всегда 
                 есть возможность кастомизировать изделия.
               </p>
               <div class="custom-products__list-wrapper">
@@ -208,35 +333,38 @@
               Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с
               технологией производства, предоставим образцы матералов.
             </p>
-            <h4 class="unique-idea__subtitle">
-              Введите свои контактные данные, и наш менеджер свяжется c Вами в
-              течении 15 минут
-            </h4>
+            <div class="unique-idea__form-wrapper">
 
-            <form class="unique-idea__form">
-              <input
-                class="unique-idea__form-input"
-                type="text"
-                placeholder="Ваше Имя"
-              />
-              <input
-                class="unique-idea__form-input"
-                type="email"
-                placeholder="Ваша електронная почта"
-              />
-              <input
-                class="unique-idea__form-input"
-                type="tel"
-                placeholder="Ваш номер телефона"
-              />
-              <button class="unique-idea__form-button" type="submit">
-                Заказать
-              </button>
-            </form>
+              <h4 class="unique-idea__subtitle">
+                Введите свои контактные данные, и наш менеджер свяжется c Вами в <span>течении 15 минут</span>
+              
+              </h4>
+  
+              <form class="unique-idea__form">
+                <input
+                  class="unique-idea__form-input"
+                  type="text"
+                  placeholder="Ваше Имя"
+                />
+                <input
+                  class="unique-idea__form-input"
+                  type="email"
+                  placeholder="Ваша електронная почта"
+                />
+                <input
+                  class="unique-idea__form-input"
+                  type="tel"
+                  placeholder="Ваш номер телефона"
+                />
+                <button class="unique-idea__form-button" type="submit">
+                  Заказать
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
-      <!-- <section class="partners">
+      <section class="partners">
           <div class="container">
             <h2>С нами соотрудничают</h2>
             <div class="partners__wrapper">
@@ -250,30 +378,36 @@
                 <li><img src="/assets/images/logo/megogo.png" /></li>
                 <li><img src="/assets/images/logo/crazybox.png" /></li>
               </ul>
-              <button class="partners-next-button">
+              <button class="partners__next-button">
                 <img src="/assets/icons/arrow-right.svg" />
             </div>
           </div>
-      </section> -->
+      </section>
     </main>
 
     <footer>
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item-contacts">
-            <img src="/assets/svg/logo.svg" alt="Gifts & Merch" />
-            <h6 class="footer__description">
-              Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание
-              свежее
-            </h6>
-            <div class="footer__contacts">
-              <a href="tel:+380630130103">+380 630 130 103</a>
-              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            <div class="footer__header-wrapper">
+
+              <img src="/assets/svg/logo.svg" alt="Gifts & Merch" />
+              <h6 class="footer__description">
+                Свежее дыхание в корпоративной жизни и жизни корпоративной дыхание
+                свежее
+              </h6>
             </div>
-            <div class="footer__social-media">
-              <a href="#"><img src="/assets/icons/facebook.svg" alt="" /></a>
-              <a href="#"><img src="/assets/icons/instagram.svg" alt="" /></a>
-              <a href="#"><img src="/assets/icons/linkedin.svg" alt="" /></a>
+            <div class="footer__contact-wrapper">
+
+              <div class="footer__contacts">
+                <a href="tel:+380630130103">+380 630 130 103</a>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+              </div>
+              <div class="footer__social-media">
+                <a href="#"><img src="/assets/icons/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/assets/icons/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/assets/icons/linkedin.svg" alt="" /></a>
+              </div>
             </div>
           </li>
           <li>
