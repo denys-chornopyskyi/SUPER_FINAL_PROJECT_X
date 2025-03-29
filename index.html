@@ -44,8 +44,43 @@
             </div>
           </div>
           <div class="burger">
-            <img src="./assets/svg/burger.svg">
+            <button popovertarget="burger-menu" popovertargetaction="show">
+              <img src="./assets/svg/burger.svg">
+            </button>
           </div>
+  
+            
+          
+          <div id="burger-menu" class="burger-list" popover="manual">
+               
+              <button popovertargetaction="hide" popovertarget="burger-menu" class="burger-close">
+              <img src="./assets/icons/cross.svg" />
+            </button> 
+              <div class="burger__user">
+                  <div class="burger__lang">
+                    <button class="top-bar-__lang-btn--active">RU</button>
+                    <button class="top-bar__lang-btn">/ENG</button>
+                  </div>
+                  <img src="./assets/icons/user.svg" alt="User icon" />
+                </div>
+                <ul class="burger__menu">
+                  <li class="burger__menu-item">Наборы</li>
+                  <li class="burger__menu-item">Все товары</li>
+                  <li class="burger__menu-item">Пошив</li>
+                  <li class="burger__menu-item">Производство</li>
+                  <li class="burger__menu-item"><a href="./info.html">Информация</a></li>
+                </ul>
+                <a href="tel:+380630130103" class="top-bar__contact burger__contact">+380 630 130 103</a>
+                  <a href="mailto:example@gmail.com" class="burger__email">example@gmail.com</a>
+          
+                <div class="burger__social-media">
+                  <a href="#"><img src="./assets/icons/facebook.svg" alt="" /></a>
+                  <a href="#"><img src="./assets/icons/instagram.svg" alt="" /></a>
+                  <a href="#"><img src="./assets/icons/linkedin.svg" alt="" /></a>
+                </div>
+          </div>
+
+          
         </div>
       </div>
 
@@ -235,7 +270,7 @@
             <li class="popular__grid-item">
               <img src="./assets/images/products/t-shirt.png" />
             </li>
-            <li class="popular__grid-item"><span>Шопперы</span></li>
+            <!-- <li class="popular__grid-item"><span>Шопперы</span></li> -->
           </ul>
           <a href="#" class="popular__products-link-bottom">Все товары</a>
         </div>

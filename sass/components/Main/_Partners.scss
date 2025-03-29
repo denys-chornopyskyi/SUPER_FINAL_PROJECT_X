@@ -25,6 +25,17 @@
   margin-top: 70px;
 }
 
+@media (max-width: 1292px) {
+  .partners__list {
+    li {
+      
+      &:nth-child(5) {
+          display: none;
+        } 
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .partners__list {
     li {
