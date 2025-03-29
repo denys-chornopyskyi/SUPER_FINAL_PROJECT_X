@@ -1,31 +1,31 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @font-face {
   font-family: "Gilroy";
-  src: url(../../assets/fonts/Gilroy-Regular.ttf);
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(../../assets/fonts/Gilroy-Medium.ttf);
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(../../assets/fonts/Gilroy-SemiBold.ttf);
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(../../assets/fonts/Gilroy-Bold.ttf);
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(../../assets/fonts/Gilroy-ExtraBold.ttf);
+  src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
@@ -36,20 +36,14 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Neutraface Display";
-  src: url(/assets/fonts/Neutraface_Display_Titling.ttf);
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
   font-family: "Pangolin";
-  src: url(/assets/fonts/Pangolin-Regular.ttf);
+  src: url(./assets/fonts/Pangolin-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Neometric";
-  src: url(/assets/fonts/Neometric\ Heavy.otf);
+  src: url(./assets/fonts/Neometric\ Heavy.otf);
   font-weight: 900;
   font-style: normal;
 }
@@ -153,7 +147,7 @@ header {
 }
 
 .header--main {
-  background: url("/assets/images/backgrounds/home-bg.png") no-repeat 45.469vw 200px, url("/assets/images/backgrounds/header-bg.png");
+  background: url("./assets/images/backgrounds/home-bg.png") no-repeat 45.469vw 200px, url("./assets/images/backgrounds/header-bg.png");
 }
 
 @media (max-width: 1024px) {
@@ -168,27 +162,27 @@ header {
 }
 @media (max-width: 480px) {
   .header--main {
-    background: url("/assets/images/backgrounds/header-bg480.png") no-repeat 40vw 320px, url("/assets/images/backgrounds/header-bg.png");
+    background: url("../assets/images/backgrounds/header-bg480.png") no-repeat 40vw 320px, url("../assets/images/backgrounds/header-bg.png");
   }
 }
 .header--info {
-  background: url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(/assets/images/backgrounds/info-bg.png) no-repeat 90% 216px, url(/assets/images/backgrounds/header-bg.png) no-repeat left top;
+  background: url(../assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(../assets/images/backgrounds/info-bg.png) no-repeat 90% 216px, url(../assets/images/backgrounds/header-bg.png) no-repeat left top;
   margin-bottom: 100px;
 }
 
 @media (max-width: 1559px) {
   .header--info {
-    background: url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(/assets/images/backgrounds/info-bg.png) no-repeat 520px 216px, url(/assets/images/backgrounds/header-bg.png) no-repeat left top;
+    background: url(../assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(../assets/images/backgrounds/info-bg.png) no-repeat 520px 216px, url(../assets/images/backgrounds/header-bg.png) no-repeat left top;
   }
 }
 @media (max-width: 768px) {
   .header--info {
-    background: url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(/assets/images/backgrounds/info-bg.png) no-repeat left 300px, url(/assets/images/backgrounds/header-bg.png) no-repeat left top;
+    background: url(../assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px, url(../assets/images/backgrounds/info-bg.png) no-repeat left 300px, url(../assets/images/backgrounds/header-bg.png) no-repeat left top;
   }
 }
 @media (max-width: 482px) {
   .header--info {
-    background: url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 900px, url(/assets/images/backgrounds/info-bg.png) no-repeat left 400px, url(/assets/images/backgrounds/header-bg.png) no-repeat left top;
+    background: url(../assets/images/backgrounds/bg\ \(2\).png) no-repeat left 900px, url(../assets/images/backgrounds/info-bg.png) no-repeat left 400px, url(../assets/images/backgrounds/header-bg.png) no-repeat left top;
   }
 }
 .top-bar {
@@ -377,7 +371,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/assets/images/backgrounds/pack.png) no-repeat right center, rgba(250, 251, 253, 0.44);
+  background: url(./assets/images/backgrounds/pack.png) no-repeat right center, rgba(250, 251, 253, 0.44);
 }
 
 .nav__menu {
@@ -465,7 +459,6 @@ nav {
 }
 
 .hero__title {
-  font-family: "Gilroy";
   text-transform: uppercase;
   color: #272525;
   margin-bottom: 20px;
@@ -583,7 +576,7 @@ main {
   padding-top: 70px;
   width: 100%;
   height: 888px;
-  background: url("/assets/images/backgrounds/popular-bg.png") no-repeat center;
+  background: url("./assets/images/backgrounds/popular-bg.png") no-repeat center;
 }
 .popular__header {
   display: -webkit-box;
@@ -609,7 +602,7 @@ main {
   position: relative;
 }
 .popular__title::after {
-  content: url(/assets/icons/star.svg);
+  content: url(./assets/icons/star.svg);
   position: absolute;
   right: 0;
   top: -13px;
@@ -627,7 +620,7 @@ main {
   padding-right: 45px;
 }
 .popular__products-link::after {
-  content: url("/assets/svg/arrow-right-large.svg");
+  content: url("./assets/svg/arrow-right-large.svg");
   position: absolute;
   right: 0;
 }
@@ -1007,7 +1000,7 @@ main {
 .sets {
   height: 672px;
   padding-top: 100px;
-  background: url(/assets/images/decorating/rotated-photo.png) no-repeat 55vw 40px, url(/assets/images/backgrounds/sets-bg.png) no-repeat center;
+  background: url(./assets/images/decorating/rotated-photo.png) no-repeat 55vw 40px, url(./assets/images/backgrounds/sets-bg.png) no-repeat center;
 }
 .sets .set__subtitle {
   font-family: "Pangolin";
@@ -1101,7 +1094,7 @@ main {
   }
 }
 .custom-products {
-  background: url(/assets/svg/circle-white.svg) no-repeat 40px top;
+  background: url(./assets/svg/circle-white.svg) no-repeat 40px top;
 }
 
 .custom-products__wrapper {
@@ -1173,7 +1166,7 @@ main {
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
-  background: url(/assets/svg/circle-gradient.svg) no-repeat;
+  background: url(./assets/svg/circle-gradient.svg) no-repeat;
   background-size: contain;
 }
 .custom-products__list-item img {
@@ -1244,14 +1237,14 @@ main {
   }
 }
 .unique-idea {
-  background: url(/assets/images/backgrounds/unique-bg.png) no-repeat left;
+  background: url(./assets/images/backgrounds/unique-bg.png) no-repeat left;
   height: 740px;
   margin-top: 75px;
 }
 
 .unique-idea__content {
   padding-top: 130px;
-  background: url(/assets/images/decorating/lamp.png) no-repeat 918px 50px, url(/assets/images/decorating/rocket1.png) no-repeat 709px 232px, url(/assets/svg/curve.svg) no-repeat 745px 395px, url(/assets/images/decorating/rocket2.png) no-repeat 1443px 33px;
+  background: url(./assets/images/decorating/lamp.png) no-repeat 918px 50px, url(./assets/images/decorating/rocket1.png) no-repeat 709px 232px, url(./assets/svg/curve.svg) no-repeat 745px 395px, url(./assets/images/decorating/rocket2.png) no-repeat 1443px 33px;
 }
 
 .unique-idea__title {
@@ -1333,7 +1326,7 @@ main {
     max-width: 300px;
   }
   .unique-idea__content {
-    background: url(/assets/images/decorating/lamp.png) no-repeat 600px -45px, url(/assets/images/decorating/rocket1.png) no-repeat 570px 232px, url(/assets/svg/curve.svg) no-repeat 600px 340px, url(/assets/images/decorating/rocket2.png) no-repeat 800px 470px;
+    background: url(./assets/images/decorating/lamp.png) no-repeat 600px -45px, url(./assets/images/decorating/rocket1.png) no-repeat 570px 232px, url(./assets/svg/curve.svg) no-repeat 600px 340px, url(./assets/images/decorating/rocket2.png) no-repeat 800px 470px;
     background-size: 400px, 60px, 59px, 80px;
   }
 }
@@ -1352,7 +1345,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url(/assets/images/decorating/rocket1.png) no-repeat 650px 150px, url(/assets/svg/curve.svg) no-repeat 650px 260px, url(/assets/images/decorating/rocket2.png) no-repeat 100px 520px;
+    background: url(./assets/images/decorating/rocket1.png) no-repeat 650px 150px, url(./assets/svg/curve.svg) no-repeat 650px 260px, url(./assets/images/decorating/rocket2.png) no-repeat 100px 520px;
     background-size: 60px, 59px, 80px;
   }
 }
@@ -1605,7 +1598,7 @@ main {
   margin-bottom: 50px;
 }
 .contacts__title::after {
-  content: url(/assets/icons/call.svg);
+  content: url(./assets/icons/call.svg);
   margin-left: 20px;
 }
 .contacts__mail {
@@ -1689,7 +1682,7 @@ main {
   }
 }
 footer {
-  background: url(/assets/images/backgrounds/footer-bg.png) no-repeat left bottom;
+  background: url(./assets/images/backgrounds/footer-bg.png) no-repeat left bottom;
   background-size: cover;
   position: relative;
   top: -100px;
@@ -1806,7 +1799,7 @@ footer {
 
 @media (max-width: 1024px) {
   footer {
-    background: url(/assets/images/backgrounds/footer-bg1024.png) no-repeat center top;
+    background: url(./assets/images/backgrounds/footer-bg1024.png) no-repeat center top;
   }
   .footer__list {
     -ms-flex-wrap: wrap;
