@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header header--info">
+      <div class="container">
+        <div class="top-bar">
+          <div class="top-bar__logo-wrapper">
+            <img src="./assets/svg/logo.svg" alt="Gifts & Merch" />
+          </div>
+          <div class="top-bar__search-wrapper">
+            <img
+              src="/assets/icons/search-gray.svg"
+              alt="search"
+              class="top-bar__search-icon"
+            />
+            <input
+              type="search"
+              name="search"
+              class="top-bar__search"
+              placeholder="Поиск"
+            />
+          </div>
+          <img
+            src="/assets/icons/search-default.svg"
+            alt="search"
+            class="top-bar__search-icon-m"
+          />
+          <a href="tel:+380630130103" class="top-bar__contact"
+            >+380 630 130 103</a
+          >
+          <div class="top-bar__user">
+            <img src="./assets/icons/user.svg" alt="User icon" />
+            <div class="top-bar__lang">
+              <button class="top-bar-__lang-btn--active">RU</button>
+              <button class="top-bar__lang-btn">/ENG</button>
+            </div>
+          </div>
+          <div class="burger">
+            <img src="/assets/svg/burger.svg" />
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="container">
+          <div class="nav__wrapper">
+            <ul class="nav__menu">
+              <li class="nav__menu-item">Наборы</li>
+              <li class="nav__menu-item">Все товары</li>
+              <li class="nav__menu-item">Пошив</li>
+              <li class="nav__menu-item">Производство</li>
+              <li class="nav__menu-item">Информация</li>
+            </ul>
+            <p class="nav__discount-banner">Шопперы со скидкой - 25%</p>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="hero">
+          <ul class="hero__breadcrumb">
+            <li>Главная</li>
+            <li class="hero__breadcrumb--active">Информация</li>
+          </ul>
+          <h2 class="hero__title">КТо такие gifst & merch?</h2>
+          <p class="hero__description">
+            Merchy - это команда гуру творчества, со своей экспертностью в
+            корпоратином сегменте. Мы знаем как волнителен, чаще стрессовый
+            бывает заказ брендированной продукции и корпоративных подарков,
+            потому, что были по обе стороны заказа. Это нам позволило изучить
+            проблематики бизнесов и представить лучшие и современые решения для
+            наших клиентов
+          </p>
+          <ul class="links-menu">
+            <li><a href="">Часто задаваемые вопросы</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Связаться с нами</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="section">
+          <h3 class="section__title">Свежее дыхание в корпоративной жизни</h3>
+          <p class="section__description">
+            Итак, сайт Mechy, который вы видите перед собой, является
+            кульминацией «идеального шторма» многолетнего поиска, оттачивания,
+            создания и объединения наших навыков и опыта. А теперь - вот оно! Мы
+            очень рады поделиться с вами нашим ассортиментом, нашими идеями и
+            нашей страстью.
+          </p>
+        </section>
+        <section class="section">
+          <h3 class="section__title">Снимаем головную боль</h3>
+          <p class="section__description">
+            Наша цель состоит в том, чтобы избавить Вас от лишнего. Выбор и
+            заказ брендированной продукции должен проходить приятно, а все
+            сложности и специфики производства останутся за кулисами. Будте
+            максимально продуктивны в своем деле и не расстачивайте свою
+            эненргию на поиски, задачи и контроль подрядчиков.
+          </p>
+        </section>
+        <section class="section-faq">
+          <article class="faq">
+            <h2 class="faq__title">Часто задаваемые вопросы</h2>
+            <article class="faq__item">
+              <h3 class="faq__question">Материал</h3>
+              <input
+                type="checkbox"
+                class="faq__checkbox"
+                id="collabsible1"
+                checked
+              />
+              <label for="collabsible1" class="collabsible__arrow">
+                <img src="/assets/icons/arrow-up.svg" />
+              </label>
+              <div class="faq__answer">
+                <p>
+                  Вы можете заказать у нас пошив толстовок из любого вида
+                  материалов:
+                </p>
+                <ul>
+                  <li>Хлопок 100%</li>
+                  <li>Хлопок/полиэстер 85/15%</li>
+                  <li>Флис</li>
+                </ul>
+              </div>
+            </article>
+            <article class="faq__item">
+              <h3 class="faq__question">Как заказать</h3>
+              <input
+                type="checkbox"
+                class="faq__checkbox"
+                id="collabsible2"
+                checked
+              />
+              <label for="collabsible2" class="collabsible__arrow">
+                <img src="/assets/icons/arrow-up.svg" />
+              </label>
+              <p class="faq__answer">
+                Выбирайте из готовых моделей или отправьте нам свой дизайн для
+                пошива.
+              </p>
+            </article>
+            <article class="faq__item">
+              <h3 class="faq__question">Оплата и доставка</h3>
+              <input
+                type="checkbox"
+                class="faq__checkbox"
+                id="collabsible3"
+                checked
+              />
+              <label for="collabsible3" class="collabsible__arrow">
+                <img src="/assets/icons/arrow-up.svg" />
+              </label>
+              <div class="faq__answer">
+                <p>
+                  Вы можете заказать у нас пошив толстовок из любого вида
+                  материалов:
+                </p>
+                <ul>
+                  <li>Шелкография</li>
+                  <li>Вышивка</li>
+                  <li>Цифровая печать</li>
+                  <li>Флекс</li>
+                </ul>
+              </div>
+            </article>
+            <article class="faq__item">
+              <h3 class="faq__question">
+                Свежее дыхание в корпоративной жизни
+              </h3>
+              <input
+                type="checkbox"
+                class="faq__checkbox"
+                id="collabsible4"
+                checked
+              />
+              <label for="collabsible4" class="collabsible__arrow">
+                <img src="/assets/icons/arrow-up.svg" />
+              </label>
+              <ul class="faq__answer">
+                <li>
+                  Не рекомендуем использовать моющие средства и стиральные
+                  порошки с отбеливателями и хлором.
+                </li>
+                <li>
+                  Перед глажкой и стиркой желательно вывернуть изделие
+                  наизнанку.
+                </li>
+                <li>
+                  Стирка в прохладной воде не выше 30°С без включения режима
+                  сушки
+                </li>
+              </ul>
+            </article>
+          </article>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26191.37854165824!2d14.44789540777073!3d50.06270348060638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b92598b6fdbed%3A0x2d38a04a58341d41!2sForm%20Factory%20Fitness%20Center%20Hostiva%C5%99!5e0!3m2!1sru!2scz!4v1743206248784!5m2!1sru!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="contact">
+          <article class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <h3 class="contacts__mail">
+              <a href="mailto:example@gmail.com"> example@gmail.com</a>
+            </h3>
+            <h3 class="contacts__tel">
+              <a href="tel:+380 630 130 103">+380 630 130 103</a>
+            </h3>
+            <ul class="contacts__social-media">
+              <li><img src="/assets/icons/viber.svg" /></li>
+              <li><img src="/assets/icons/telegram.svg" /></li>
+              <li><img src="/assets/icons/whatsapp.svg" /></li>
+            </ul>
+          </article>
+          <article class="contact-form">
+            <h2 class="contact-form__title">Свяжитесь с нами</h2>
+            <div class="contact-form__body">
+              <h4>
+                Введите свои контактные данные, и наш менеджер свяжется с Вами
+                <span>в течении 15 минут</span>
+              </h4>
+              <form class="contact-form__form">
+                <input
+                  class="unique-idea__form-input"
+                  type="text"
+                  placeholder="Ваше Имя"
+                />
+                <input
+                  class="unique-idea__form-input"
+                  type="email"
+                  placeholder="Ваша електронная почта"
+                />
+                <input
+                  class="unique-idea__form-input"
+                  type="tel"
+                  placeholder="Ваш номер телефона"
+                />
+                <button class="unique-idea__form-button" type="submit">
+                  Заказать
+                </button>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item-contacts">
+            <div class="footer__header-wrapper">
+              <img src="/assets/svg/logo.svg" alt="Gifts & Merch" />
+              <h6 class="footer__description">
+                Свежее дыхание в корпоративной жизни и жизни корпоративной
+                дыхание свежее
+              </h6>
+            </div>
+            <div class="footer__contact-wrapper">
+              <div class="footer__contacts">
+                <a href="tel:+380630130103">+380 630 130 103</a>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+              </div>
+              <div class="footer__social-media">
+                <a href="#"><img src="/assets/icons/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/assets/icons/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/assets/icons/linkedin.svg" alt="" /></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <ul class="footer__links">
+              <li><h5>Категории</h5></li>
+              <li><h6>Пошив</h6></li>
+              <li><h6>Все товары</h6></li>
+              <li><h6>Наборы</h6></li>
+              <li><h6>Производство</h6></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="footer__links">
+              <li>
+                <h5>Информация</h5>
+              </li>
+              <li>
+                <h6>O нас</h6>
+              </li>
+              <li>
+                <h6>Доставка</h6>
+              </li>
+              <li>
+                <h6>Оплата</h6>
+              </li>
+              <li>
+                <h6>Контакты</h6>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item-form">
+            <h5>Связаться с менеджером</h5>
+            <p class="footer__form-text">
+              Есть вопрос на который не нашли ответ? Оставьте контакт и наш
+              менеджер свяжеться с вами
+            </p>
+
+            <form class="footer__form">
+              <input type="tel" name="phone" placeholder="Номер телефона" />
+              <button type="submit">
+                <img src="/assets/icons/form-arrow-right.svg" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          © 2023 Все права защищены <a href="#">Политика конфиденциальности</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

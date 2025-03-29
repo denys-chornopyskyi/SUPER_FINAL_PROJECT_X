@@ -88,9 +88,39 @@
   }
 }
 
-@media (max-width: 320px) {
+
+.hero__breadcrumb {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  .hero__breadcrumb--active {
+    color: #524983;
+  }
+  li {
+    color: #7981AD;
+    font-size: 14px;
+    &:not(:first-child)::before {
+      content: '/';
+      margin-right: 5px;
+    }
+  }
+  
 }
 
+.links-menu {
+  display: flex;
+  gap: 40px;
+  li {
+    color: #3C336C;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 762px) {
+  .hero__breadcrumb {
+    padding-top: 20px;
+  }
+}
 
 
 

@@ -30,6 +30,41 @@ header {
   }
 }
 
+.header--info {
+  background: 
+  url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px,
+  url(/assets/images/backgrounds/info-bg.png) no-repeat 90% 216px,
+  url(/assets/images/backgrounds/header-bg.png) no-repeat left top; 
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1559px) {
+  .header--info {
+
+    background: 
+    url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px,
+    url(/assets/images/backgrounds/info-bg.png) no-repeat 520px 216px,
+    url(/assets/images/backgrounds/header-bg.png) no-repeat left top; 
+  }
+}
+@media (max-width: 768px) {
+  .header--info {
+
+    background: 
+    url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 750px,
+    url(/assets/images/backgrounds/info-bg.png) no-repeat left 300px,
+    url(/assets/images/backgrounds/header-bg.png) no-repeat left top; 
+  }
+}
+@media (max-width: 482px) {
+  .header--info {
+
+    background: 
+    url(/assets/images/backgrounds/bg\ \(2\).png) no-repeat left 900px,
+    url(/assets/images/backgrounds/info-bg.png) no-repeat left 400px,
+    url(/assets/images/backgrounds/header-bg.png) no-repeat left top; 
+  }
+}
 
 
 
