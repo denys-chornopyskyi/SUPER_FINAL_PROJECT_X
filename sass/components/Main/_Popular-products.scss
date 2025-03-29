@@ -42,11 +42,11 @@
   
   &__products-link {
     color: $night;
-    transition: all 250s linear;
     position: relative;
     padding-right: 45px;
     &::after {
       content: url("../assets/svg/arrow-right-large.svg");
+      transition: all 0.2s linear;
       position: absolute;
       right: 0;
     }
@@ -121,7 +121,7 @@
   border-radius: 25px;
   margin: 0 auto;
   padding: 20px;
-  top: 300px;
+  top: 150px;
 
   h4 {
     font-size: 28px;
@@ -339,10 +339,7 @@
       grid-template-rows: 250px 140px 60px;
     }
     &__products-link {
-      padding: 0;
-     &::after {
-      display: none;
-     }
+     display: none;
     }
   }
 }

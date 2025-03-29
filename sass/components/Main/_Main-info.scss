@@ -184,4 +184,11 @@
     flex-wrap: wrap;
     gap: 50px;
   }
+  .faq__title, .contacts__title, .contact-form__title {
+    font-size: 28px;
+  }
+  .faq__question, .contacts__mail, .contacts__tel {
+    font-size: 24px;
+  }
+
 }
