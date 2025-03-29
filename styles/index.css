@@ -563,7 +563,7 @@ nav {
 }
 main {
   position: relative;
-  top: -300px;
+  top: -270px;
   z-index: 0;
 }
 
@@ -608,7 +608,7 @@ main {
   top: -13px;
 }
 .popular__products-link-bottom {
-  display: block;
+  display: none;
   text-align: right;
   margin-top: 30px;
 }
@@ -973,6 +973,9 @@ main {
   .popular__products-link {
     display: none;
   }
+  .popular__products-link-bottom {
+    display: block;
+  }
   .popular__grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 200px 200px 200px;
@@ -1144,6 +1147,9 @@ main {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 

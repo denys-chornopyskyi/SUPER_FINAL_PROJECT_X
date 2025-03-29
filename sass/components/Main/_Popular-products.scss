@@ -33,7 +33,7 @@
     }
   }
   &__products-link-bottom {
-    display: block;
+    display: none;
     text-align: right;
     margin-top: 30px;
   }
@@ -351,6 +351,9 @@
     }
     &__products-link {
       display: none;
+    }
+    &__products-link-bottom {
+      display: block;
     }
     &__grid {
       grid-template-columns: repeat(2, 1fr);
