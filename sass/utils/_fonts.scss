@@ -1,7 +1,7 @@
 // Gilroy - Regular
 @font-face {
   font-family: 'Gilroy';
-  src: url(../../assets/fonts/Gilroy-Regular.ttf);
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 // Gilroy - Medium
 @font-face {
   font-family: 'Gilroy';
-  src: url(../../assets/fonts/Gilroy-Medium.ttf);
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 // Gilroy - SemiBold
 @font-face {
   font-family: 'Gilroy';
-  src: url(../../assets/fonts/Gilroy-SemiBold.ttf);
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 // Gilroy - Bold
 @font-face {
   font-family: 'Gilroy';
-  src: url(../../assets/fonts/Gilroy-Bold.ttf);
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 // Gilroy - ExtraBold
 @font-face {
   font-family: 'Gilroy';
-  src: url(../../assets/fonts/Gilroy-ExtraBold.ttf);
+  src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
@@ -46,18 +46,11 @@
   font-style: normal;
 }
 
-// Neutraface Display - Titling
-@font-face {
-  font-family: "Neutraface Display";
-  src: url(/assets/fonts/Neutraface_Display_Titling.ttf);
-  font-weight: 900;
-  font-style: normal;
-}
 
 // Pangolin - regular
 @font-face {
   font-family: "Pangolin";
-  src: url(/assets/fonts/Pangolin-Regular.ttf);
+  src: url(./assets/fonts/Pangolin-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
@@ -65,7 +58,7 @@
 //  Neomatric - heavy
 @font-face {
   font-family: "Neometric";
-  src: url(/assets/fonts/Neometric\ Heavy.otf);
+  src: url(./assets/fonts/Neometric\ Heavy.otf);
   font-weight: 900;
   font-style: normal;
 }

@@ -1,5 +1,5 @@
 footer {
-  background: url(/assets/images/backgrounds/footer-bg.png) no-repeat left bottom;
+  background: url(./assets/images/backgrounds/footer-bg.png) no-repeat left bottom;
   background-size: cover;
   position: relative;
   top: -100px;
@@ -96,7 +96,7 @@ footer {
 
 @media (max-width: 1024px) {
   footer {
-    background: url(/assets/images/backgrounds/footer-bg1024.png) no-repeat center top;
+    background: url(./assets/images/backgrounds/footer-bg1024.png) no-repeat center top;
   }
   .footer__list {
     flex-wrap: wrap;

@@ -1,5 +1,5 @@
 .unique-idea {
-  background: url(/assets/images/backgrounds/unique-bg.png) no-repeat left ;
+  background: url(./assets/images/backgrounds/unique-bg.png) no-repeat left ;
   height: 740px;
   margin-top: 75px;
 
@@ -7,10 +7,10 @@
 
 .unique-idea__content {
   padding-top: 130px;
-  background: url(/assets/images/decorating/lamp.png) no-repeat 918px 50px,
-  url(/assets/images/decorating/rocket1.png) no-repeat 709px 232px,
-  url(/assets/svg/curve.svg) no-repeat 745px 395px,
-  url(/assets/images/decorating/rocket2.png) no-repeat 1443px 33px;
+  background: url(./assets/images/decorating/lamp.png) no-repeat 918px 50px,
+  url(./assets/images/decorating/rocket1.png) no-repeat 709px 232px,
+  url(./assets/svg/curve.svg) no-repeat 745px 395px,
+  url(./assets/images/decorating/rocket2.png) no-repeat 1443px 33px;
 }
 
 .unique-idea__title {
@@ -73,10 +73,10 @@
   }
   .unique-idea__content {
 
-  background: url(/assets/images/decorating/lamp.png) no-repeat 600px -45px,
-  url(/assets/images/decorating/rocket1.png)  no-repeat 570px 232px,
-  url(/assets/svg/curve.svg) no-repeat 600px 340px,
-  url(/assets/images/decorating/rocket2.png) no-repeat 800px 470px;
+  background: url(./assets/images/decorating/lamp.png) no-repeat 600px -45px,
+  url(./assets/images/decorating/rocket1.png)  no-repeat 570px 232px,
+  url(./assets/svg/curve.svg) no-repeat 600px 340px,
+  url(./assets/images/decorating/rocket2.png) no-repeat 800px 470px;
   background-size: 400px, 60px, 59px, 80px;
 }
 
@@ -95,9 +95,9 @@
     flex-direction: column;
     align-items: center;
       background:
-      url(/assets/images/decorating/rocket1.png)  no-repeat 650px 150px,
-      url(/assets/svg/curve.svg) no-repeat 650px 260px,
-      url(/assets/images/decorating/rocket2.png) no-repeat 100px 520px;
+      url(./assets/images/decorating/rocket1.png)  no-repeat 650px 150px,
+      url(./assets/svg/curve.svg) no-repeat 650px 260px,
+      url(./assets/images/decorating/rocket2.png) no-repeat 100px 520px;
       background-size: 60px, 59px, 80px;
   }
 }
@@ -136,9 +136,5 @@
       font-size: 15px;
     
   }
-}
-
-@media (max-width: 320px) { 
-}
 }
 
