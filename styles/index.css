@@ -743,6 +743,9 @@ nav {
   content: "/";
   margin-right: 5px;
 }
+.hero__breadcrumb a {
+  font-size: inherit;
+}
 
 .links-menu {
   display: -webkit-box;
@@ -2110,5 +2113,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 827px) {
+  footer {
+    background: url(/assets/images/backgrounds/Footer\ 768\ \(1\).png) no-repeat left bottom;
   }
 }/*# sourceMappingURL=index.css.map */
